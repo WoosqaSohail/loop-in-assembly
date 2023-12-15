@@ -1,0 +1,22 @@
+Initial values: x5 = 0, x6 = 10
+
+1. beq x6, x0, DONE   ; Branch if x6 is equal to zero
+   (Not taken, as x6 is 10)
+
+2. addi x6, x6, -1    ; Decrement x6 by 1
+   (x6 = 9)
+
+3. addi x5, x5, 2     ; Increment x5 by 2
+   (x5 = 2)
+
+4. jal x0, LOOP       ; Jump back to LOOP
+   (Repeat steps 1-4)
+
+... Repeat until x6 becomes zero ...
+
+5. beq x6, x0, DONE   ; Branch if x6 is equal to zero
+   (Taken, as x6 is now 0)
+
+6. DONE:
+
+Final values: x5 = 2 * 10 = 20
