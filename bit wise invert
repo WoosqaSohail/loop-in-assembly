@@ -1,0 +1,3 @@
+not x5, x6
+lw x5, 0(x17)    // Load the value at address x17 + 0 into register x5 (assuming C[0] is at address x17)
+slli x5, x5, 4   // Left-shift the value in x5 by 4 positions
